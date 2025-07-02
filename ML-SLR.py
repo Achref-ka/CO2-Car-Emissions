@@ -1,4 +1,5 @@
-# Simple Linear Regresion
+# Simple Linear Regresion ML Model
+
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -35,7 +36,6 @@ plt.show()
 
 # Now, let's plot each of these features against the Emission, to see how linear their relationship is:
 
-
 plt.scatter(cdf.FUELCONSUMPTION_COMB, cdf.CO2EMISSIONS,  color='blue')
 plt.xlabel("FUELCONSUMPTION_COMB")
 plt.ylabel("Emission")
@@ -44,6 +44,8 @@ plt.scatter(cdf.ENGINESIZE, cdf.CO2EMISSIONS,  color='blue')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
 plt.show()
+
+
 
 
 # Practice
@@ -75,7 +77,6 @@ test = cdf[~msk]
 # Simple Regression Model
 # Linear Regression fits a linear model with coefficients B = (B1, ..., Bn) to minimize the 'residual sum of squares' between the actual value y in the dataset, and the predicted value yhat using linear approximation.
 # Train data distribution
-
 
 
 plt.scatter(train.ENGINESIZE, train.CO2EMISSIONS,  color='blue')
