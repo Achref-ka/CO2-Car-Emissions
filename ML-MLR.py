@@ -1,4 +1,4 @@
-# Multiple Linear Regresion
+# Multiple Linear Regresion ML Model
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -63,6 +63,7 @@ plt.show()
 # The good thing here is that multiple linear regression model is the extension of the simple linear regression model.
 
 
+
 from sklearn import linear_model
 regr = linear_model.LinearRegression()
 x = np.asanyarray(train[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB']])
@@ -97,6 +98,8 @@ print("Mean Squared error(MSE): %.2f"
 
 # Explained variance score: 1 is perfect prediction
 print('Variance score: %.2f' % regr.score(x, y))
+
+
 
 # Practice
 # Try to use a multiple linear regression with the same dataset, but this time use FUELCONSUMPTION_CITY and FUELCONSUMPTION_HWY instead of FUELCONSUMPTION_COMB. 
